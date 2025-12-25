@@ -5,7 +5,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-2">
             <h3 className="text-2xl font-bold font-heading mb-6 tracking-tighter">
-              STRATEGIC<span className="text-accent">.OPS</span>
+              AEGIX
             </h3>
             <p className="text-primary-foreground/70 max-w-sm mb-6">
               Enabling human potential in organizations through battle-proven military principles.
@@ -26,7 +26,7 @@ export function Footer() {
           <div>
             <h4 className="font-mono font-bold uppercase mb-4 text-accent">Contact</h4>
             <p className="text-sm text-primary-foreground/70 mb-2">
-              info@strategic-ops.com
+              info@aegix.com
             </p>
             <p className="text-sm text-primary-foreground/70">
               Brussels, Belgium
@@ -35,7 +35,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center text-xs text-primary-foreground/40 font-mono">
-          <p>© 2024 Strategic Ops. All rights reserved.</p>
+          <p>© 2024 Aegix. All rights reserved.</p>
           <p>Designed with Tactical Precision.</p>
         </div>
       </div>
