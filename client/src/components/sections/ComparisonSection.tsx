@@ -10,13 +10,12 @@ export function ComparisonSection() {
               Why Choose Us
             </div>
             <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6 text-primary">
-              BATTLE PROVEN <br/>
-              <span className="text-muted-foreground">VS.</span> ACADEMIC THEORY
+              BATTLE-PROVEN <br/>
+              <span className="text-muted-foreground">VS.</span> UNTESTED THEORY
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Many consultants offer expensive PowerPoint presentations based on unproven models. 
-              We offer concrete, experience-driven implementation based on what actually works 
-              in high-stakes environments.
+              We offer concrete implementation based on experience in high-stakes environments. 
+              No expensive paperwork or strictly theoretical presentations based on unproven models.
             </p>
           </div>
 
