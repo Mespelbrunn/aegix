@@ -17,8 +17,8 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold font-heading tracking-tighter text-primary cursor-pointer">
-            AEGIX
+        <Link href="/" className="cursor-pointer flex items-center">
+          <img src="/aegix-logo.png" alt="Aegix Logo" className="h-12 w-auto hover:opacity-80 transition-opacity" />
         </Link>
 
         {/* Desktop Nav */}
