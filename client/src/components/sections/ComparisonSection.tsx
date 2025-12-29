@@ -1,4 +1,5 @@
 import { Check, X } from "lucide-react";
+import aegixLogoDark from "/aegix-logo-dark.png";
 
 export function ComparisonSection() {
   return (
@@ -21,17 +22,14 @@ export function ComparisonSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Us */}
-            <div className="bg-primary text-primary-foreground p-8 relative">
-              <div className="absolute top-0 right-0 p-4 opacity-10">
-                <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/>
-                </svg>
+            <div className="bg-primary text-primary-foreground p-8">
+              <div className="mb-8">
+                <img src={aegixLogoDark} alt="Aegix Logo" className="h-16 w-auto" />
               </div>
-              <h3 className="text-xl font-bold font-heading uppercase mb-6 tracking-wider">Strategic.Ops</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-accent mt-0.5" />
-                  <span className="text-sm font-medium">Battle Proven Methods</span>
+                  <span className="text-sm font-medium">Battle-proven Methods</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-accent mt-0.5" />
@@ -39,7 +37,7 @@ export function ComparisonSection() {
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-accent mt-0.5" />
-                  <span className="text-sm font-medium">Actionable Intelligence</span>
+                  <span className="text-sm font-medium">From Information to Actionable Intelligence</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-accent mt-0.5" />
@@ -50,15 +48,15 @@ export function ComparisonSection() {
 
             {/* Them */}
             <div className="bg-secondary/20 border border-border p-8 text-muted-foreground">
-               <h3 className="text-xl font-bold font-heading uppercase mb-6 tracking-wider">Traditional</h3>
+              <div className="mb-8 h-16"></div>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
-                  <span className="text-sm">Academic Theory</span>
+                  <span className="text-sm">Theoretical Foundations only</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
-                  <span className="text-sm">Endless Presentations</span>
+                  <span className="text-sm">Generic Programs without Ownership</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
@@ -66,7 +64,7 @@ export function ComparisonSection() {
                 </li>
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
-                  <span className="text-sm">Focus on Process</span>
+                  <span className="text-sm">Focus on Presentations</span>
                 </li>
               </ul>
             </div>
