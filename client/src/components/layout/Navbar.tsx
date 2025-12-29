@@ -8,10 +8,8 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "#methodology", label: "Methodology" },
-    { href: "#comparison", label: "Why Us" },
-    { href: "#services", label: "Services" },
-    { href: "#contact", label: "Contact" },
+    { href: "/method", label: "The Aegix Method" },
+    { href: "/about", label: "About Us" },
   ];
 
   return (
@@ -33,7 +31,9 @@ export function Navbar() {
             </a>
           ))}
           <Button variant="default" className="font-mono uppercase text-xs tracking-widest rounded-none">
-            Get Intelligence
+            <a href="/contact" className="text-white hover:text-white no-underline">
+              Contact
+            </a>
           </Button>
         </div>
 
@@ -58,7 +58,9 @@ export function Navbar() {
                   </a>
                 ))}
                 <Button className="w-full font-mono uppercase rounded-none">
-                  Get Intelligence
+                  <a href="/contact" className="text-white hover:text-white no-underline w-full">
+                    Contact
+                  </a>
                 </Button>
               </div>
             </SheetContent>
