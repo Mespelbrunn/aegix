@@ -14,7 +14,7 @@ export function ComparisonSection() {
               <span className="text-muted-foreground">VS.</span> UNTESTED THEORY
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We offer concrete implementation based on experience in high-stakes environments. 
+              We offer concrete implementation based on experience in high-stakes environments backed up by scientific research. 
               No expensive paperwork or strictly theoretical presentations based on unproven models.
             </p>
           </div>
