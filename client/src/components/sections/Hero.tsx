@@ -28,7 +28,7 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 border border-accent/30 bg-accent/5 text-accent text-xs font-mono uppercase tracking-widest mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              Battle Proven Methodology
+              Battle-Proven Methodology
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold font-heading leading-tight mb-6 text-primary">
@@ -62,7 +62,7 @@ export function Hero() {
           >
             {[
               { label: "Experience", value: "25+ YEARS" },
-              { label: "Approach", value: "BATTLE PROVEN" },
+              { label: "Approach", value: "BATTLE-PROVEN" },
               { label: "Focus", value: "ACTIONABLE" },
               { label: "Outcome", value: "SUSTAINED" },
             ].map((stat, i) => (
