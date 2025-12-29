@@ -23,8 +23,8 @@ export function ComparisonSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Us */}
             <div className="bg-primary text-primary-foreground p-8 flex flex-col items-center justify-start">
-              <div className="flex justify-center w-full mb-8 items-center">
-                <img src={aegixLogoDark} alt="Aegix Logo" className="h-24 w-auto" />
+              <div className="flex justify-center w-full mb-6 items-center h-12">
+                <img src={aegixLogoDark} alt="Aegix Logo" className="h-12 w-auto" />
               </div>
               <ul className="space-y-4 w-full">
                 <li className="flex items-start gap-3">
