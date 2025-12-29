@@ -32,23 +32,21 @@ export function Hero() {
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold font-heading leading-tight mb-6 text-primary">
-              FROM SURVIVAL <br />
-              TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">PERFORMANCE</span>
+              FROM PLANS <br />
+              TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">RESULTS</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-              We don't sell academic models. We apply battle-proven military principles 
-              to transform your organization's culture, leadership, and operations. 
-              Turn information into <span className="text-foreground font-semibold">actionable intelligence</span>.
+              We bridge the gap between strategy and performance. We solve the execution problem by applying battle-proven military principles and experience to transform your organization's culture, leadership and operations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="rounded-none text-base px-8 h-14 bg-primary hover:bg-primary/90 text-primary-foreground font-mono uppercase tracking-wider group">
-                Start Mission
+                Start Mission (if you choose to accept it)
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
               <Button size="lg" variant="outline" className="rounded-none text-base px-8 h-14 border-primary text-primary hover:bg-primary/5 font-mono uppercase tracking-wider">
-                Explore The Model
+                Get To Know Maarten And Patrick
               </Button>
             </div>
           </motion.div>
