@@ -22,11 +22,11 @@ export function ComparisonSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Us */}
-            <div className="bg-primary text-primary-foreground p-8">
-              <div className="mb-8">
-                <img src={aegixLogoDark} alt="Aegix Logo" className="h-16 w-auto" />
+            <div className="bg-primary text-primary-foreground p-8 flex flex-col items-center justify-start">
+              <div className="mb-12 flex justify-center w-full">
+                <img src={aegixLogoDark} alt="Aegix Logo" className="h-40 w-auto" />
               </div>
-              <ul className="space-y-4">
+              <ul className="space-y-4 w-full">
                 <li className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-accent mt-0.5" />
                   <span className="text-sm font-medium">Battle-proven Methods</span>
@@ -47,8 +47,8 @@ export function ComparisonSection() {
             </div>
 
             {/* Them */}
-            <div className="bg-secondary/20 border border-border p-8 text-muted-foreground">
-              <div className="mb-8 h-16"></div>
+            <div className="bg-secondary/20 border border-border p-8 text-muted-foreground flex flex-col items-center justify-start">
+              <h3 className="text-xl font-bold font-heading uppercase mb-12 tracking-wider text-center">Traditional Consultancy</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
