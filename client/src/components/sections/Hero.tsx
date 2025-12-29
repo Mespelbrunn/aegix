@@ -59,10 +59,10 @@ export function Hero() {
             className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-8"
           >
             {[
-              { label: "Experience", value: "25+ YEARS" },
+              { label: "Experience", value: "30+ YEARS" },
               { label: "Approach", value: "BATTLE-PROVEN" },
-              { label: "Focus", value: "ACTIONABLE" },
-              { label: "Outcome", value: "SUSTAINED" },
+              { label: "Focus", value: "PEOPLE & OPERATIONS" },
+              { label: "Outcome", value: "SUSTAINED PERFORMANCE" },
             ].map((stat, i) => (
               <div key={i}>
                 <div className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-1">{stat.label}</div>
