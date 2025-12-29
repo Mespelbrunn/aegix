@@ -28,19 +28,19 @@ export function ComparisonSection() {
               </div>
               <ul className="space-y-4 w-full">
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-accent mt-0.5" />
+                  <Check className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm font-medium">Battle-proven Methods</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-accent mt-0.5" />
+                  <Check className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm font-medium">Concrete Implementation</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-accent mt-0.5" />
+                  <Check className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm font-medium">From Information to Actionable Intelligence</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-accent mt-0.5" />
+                  <Check className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm font-medium">Focus on Outcome</span>
                 </li>
               </ul>
@@ -48,22 +48,24 @@ export function ComparisonSection() {
 
             {/* Them */}
             <div className="bg-secondary/20 border border-border p-8 text-muted-foreground flex flex-col items-center justify-start">
-              <h3 className="text-xl font-bold font-heading uppercase mb-12 tracking-wider text-center">Traditional Consultancy</h3>
-              <ul className="space-y-4">
+              <div className="flex justify-center w-full mb-6 items-center h-12">
+                <h3 className="text-sm font-bold font-heading uppercase tracking-wider text-center">Traditional Consultancy</h3>
+              </div>
+              <ul className="space-y-4 w-full">
                 <li className="flex items-start gap-3">
-                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
+                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm">Theoretical Foundations only</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
+                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm">Generic Programs without Ownership</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
+                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm">Information Overload</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5" />
+                  <X className="w-5 h-5 text-muted-foreground/50 mt-0.5 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-sm">Focus on Presentations</span>
                 </li>
               </ul>
