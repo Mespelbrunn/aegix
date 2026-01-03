@@ -175,7 +175,7 @@ export function ProblemSection() {
 
               <div className="mt-8 pt-6 border-t border-border min-h-[4rem] flex items-center justify-center">
                 {problem.title === "Disruption of Operations" ? (
-                  <p className="text-[10px] font-bold text-primary font-mono tracking-widest uppercase text-center leading-relaxed">
+                  <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase text-center leading-relaxed">
                     60-75% Human Component affects a 10-20% Impact on Revenue
                   </p>
                 ) : (
