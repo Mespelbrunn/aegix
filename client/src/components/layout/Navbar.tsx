@@ -30,10 +30,10 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <Button variant="default" className="font-mono uppercase text-xs tracking-widest rounded-none">
-            <a href="/contact" className="text-white hover:text-white no-underline">
+          <Button variant="default" className="font-mono uppercase text-xs tracking-widest rounded-none" asChild>
+            <Link href="/contact">
               Contact
-            </a>
+            </Link>
           </Button>
         </div>
 
@@ -57,10 +57,10 @@ export function Navbar() {
                     {link.label}
                   </a>
                 ))}
-                <Button className="w-full font-mono uppercase rounded-none">
-                  <a href="/contact" className="text-white hover:text-white no-underline w-full">
+                <Button className="w-full font-mono uppercase rounded-none" asChild>
+                  <Link href="/contact" onClick={() => setIsOpen(false)}>
                     Contact
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </SheetContent>

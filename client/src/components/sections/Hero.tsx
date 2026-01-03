@@ -42,7 +42,7 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="rounded-none text-base px-8 h-14 bg-primary hover:bg-primary/90 text-primary-foreground font-mono uppercase tracking-wider group" asChild>
-                <a href="#contact">
+                <a href="/contact">
                   Start Your Mission
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
