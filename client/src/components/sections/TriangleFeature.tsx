@@ -31,8 +31,8 @@ export function TriangleFeature() {
         </div>
 
         <div className="relative max-w-4xl mx-auto flex items-center justify-center">
-          <div className="relative w-full max-w-[800px] aspect-[16/12]">
-            <svg viewBox="0 0 800 600" className="w-full h-full drop-shadow-2xl">
+          <div className="relative w-full max-w-[800px] aspect-[16/14]">
+            <svg viewBox="0 0 800 700" className="w-full h-full drop-shadow-2xl">
               {/* Roof / Pediment */}
               <motion.g whileHover={{ y: -5 }} className="cursor-pointer group">
                 <path 
@@ -62,9 +62,9 @@ export function TriangleFeature() {
               {/* Architrave / Top Base */}
               <motion.g whileHover={{ scale: 1.01 }} className="cursor-pointer group">
                 <rect 
-                  x="50" 
+                  x="20" 
                   y="155" 
-                  width="700" 
+                  width="760" 
                   height="40" 
                   fill="#0F2F2E"
                   className="transition-all hover:brightness-110"
@@ -80,39 +80,43 @@ export function TriangleFeature() {
               </motion.g>
 
               {/* Pillars */}
-              {pillars.map((pillar, i) => (
+              {[
+                { label: "Talent Integration", description: "Selection, Onboarding, Nurture", x: 20 },
+                { label: "Culture & Leadership", description: "Values, HRO Principles, Resilience", x: 350 },
+                { label: "Sustained Operations", description: "Workflow, Decision Making, Planning", x: 680 }
+              ].map((pillar, i) => (
                 <motion.g 
                   key={i}
                   whileHover={{ scale: 1.02, y: -2 }}
                   className="cursor-pointer group"
                 >
-                  {/* Pillar Shaft - lengthened to 280 */}
+                  {/* Pillar Shaft - lengthened further */}
                   <rect 
-                    x={120 + i * 230} 
+                    x={pillar.x} 
                     y="210" 
                     width="100" 
-                    height="280" 
+                    height="320" 
                     fill="#0F2F2E"
                     className="transition-all hover:brightness-110"
                   />
                   
                   {/* Pillar Capital & Base */}
-                  <rect x={110 + i * 230} y="210" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
-                  <rect x={110 + i * 230} y="480" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
+                  <rect x={pillar.x - 10} y="210" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
+                  <rect x={pillar.x - 10} y="520" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
                   
-                  {/* Vertical Text - Centered vertically (210 + 280/2 = 350) */}
+                  {/* Vertical Text - Centered vertically (210 + 320/2 = 370) */}
                   <text 
-                    x={170 + i * 230} 
-                    y="350" 
+                    x={pillar.x + 50} 
+                    y="370" 
                     textAnchor="middle" 
-                    transform={`rotate(-90, ${170 + i * 230}, 350)`}
+                    transform={`rotate(-90, ${pillar.x + 50}, 370)`}
                     className="text-lg font-bold font-heading fill-white uppercase tracking-widest pointer-events-none"
                   >
                     {pillar.label}
                   </text>
 
                   {/* Tooltip for Pillar */}
-                  <foreignObject x={100 + i * 230} y="250" width="140" height="100" className="opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <foreignObject x={pillar.x - 20} y="250" width="140" height="100" className="opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                     <div className="p-3 bg-popover border border-border text-xs text-center shadow-xl">
                       <p className="font-bold text-primary mb-1">{pillar.label}</p>
                       <p className="text-muted-foreground">{pillar.description}</p>
@@ -124,16 +128,16 @@ export function TriangleFeature() {
               {/* Base / Foundation */}
               <motion.g whileHover={{ y: 2 }} className="cursor-pointer group">
                 <rect 
-                  x="30" 
-                  y="510" 
-                  width="740" 
+                  x="20" 
+                  y="550" 
+                  width="760" 
                   height="60" 
                   fill="#0F2F2E"
                   className="transition-all hover:brightness-110"
                 />
                 <text 
                   x="400" 
-                  y="548" 
+                  y="588" 
                   textAnchor="middle" 
                   className="text-xl font-bold font-heading fill-white uppercase tracking-[0.4em]"
                 >
