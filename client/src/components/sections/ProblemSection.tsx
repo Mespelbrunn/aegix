@@ -26,8 +26,12 @@ export function ProblemSection() {
       gaps: [
         { label: "Resource Allocation", value: "7.5%" },
         { label: "Poor Communication", value: "5.2%" },
+        { label: "Poor Leadership", value: "4.5%" },
         { label: "Undefined Actions", value: "4.5%" },
-        { label: "Unclear Accountability", value: "4.1%" }
+        { label: "Unclear Accountability", value: "4.1%" },
+        { label: "Organizational Silos", value: "3.7%" },
+        { label: "Inadequate Consequences", value: "3.0%" },
+        { label: "Inadequate Monitoring", value: "3.0%" }
       ],
       stats: "37% Average Performance Loss"
     }
