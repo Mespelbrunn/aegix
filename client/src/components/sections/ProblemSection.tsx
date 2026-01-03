@@ -63,30 +63,30 @@ export function ProblemSection() {
 
               <div className="flex-grow space-y-6">
                 {problem.sources && (
-                  <div className="space-y-6">
-                    <div className="grid grid-cols-2 gap-8 text-[10px] uppercase font-mono tracking-wider relative">
-                      <div className="flex flex-col items-center">
+                  <div className="flex-grow flex flex-col">
+                    <div className="grid grid-cols-2 gap-8 text-[10px] uppercase font-mono tracking-wider relative flex-grow">
+                      <div className="flex flex-col h-full">
                         <div className="w-full text-left">
                           <p className="text-accent font-bold mb-3 underline underline-offset-4 text-xs">Sources</p>
                           <ul className="space-y-2 min-h-[100px]">
                             {problem.sources.map((s, i) => <li key={i}>• {s}</li>)}
                           </ul>
                         </div>
-                        <div className="flex flex-col items-center mt-4">
-                          <ArrowDown className="w-4 h-4 text-accent/50 mb-2" />
-                          <p className="text-[10px] font-bold text-primary whitespace-nowrap">60-75% Human Component</p>
+                        <div className="flex-grow flex flex-col items-center justify-end mt-4">
+                          <ArrowDown className="w-4 h-8 text-accent/50 mb-2" />
+                          <p className="text-[10px] font-bold text-primary text-center">60-75% Human Component</p>
                         </div>
                       </div>
-                      <div className="flex flex-col items-center">
+                      <div className="flex flex-col h-full">
                         <div className="w-full text-left">
                           <p className="text-accent font-bold mb-3 underline underline-offset-4 text-xs">Impact</p>
                           <ul className="space-y-2 min-h-[100px]">
                             {problem.impacts.map((im, i) => <li key={i}>• {im}</li>)}
                           </ul>
                         </div>
-                        <div className="flex flex-col items-center mt-4">
-                          <ArrowDown className="w-4 h-4 text-accent/50 mb-2" />
-                          <p className="text-[10px] font-bold text-primary whitespace-nowrap">10-20% Impact on Revenue</p>
+                        <div className="flex-grow flex flex-col items-center justify-end mt-4">
+                          <ArrowDown className="w-4 h-8 text-accent/50 mb-2" />
+                          <p className="text-[10px] font-bold text-primary text-center">10-20% Impact on Revenue</p>
                         </div>
                       </div>
                     </div>
@@ -171,11 +171,13 @@ export function ProblemSection() {
                 )}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-border">
+              <div className="mt-8 pt-6 border-t border-border min-h-[4rem] flex items-center justify-center">
                 {problem.title === "Disruption of Operations" ? (
-                  <div className="h-6" /> // Placeholder to maintain height symmetry
+                  <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase text-center">
+                    affects a
+                  </p>
                 ) : (
-                  <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase">
+                  <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase text-center">
                     {problem.stats}
                   </p>
                 )}
