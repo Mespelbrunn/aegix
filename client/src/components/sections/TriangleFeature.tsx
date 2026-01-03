@@ -23,11 +23,15 @@ export function TriangleFeature() {
     <section id="the-aegix-method" className="py-24 bg-secondary/30 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">The Aegix Method</h2>
-          <p className="text-muted-foreground text-lg">
-            Our framework for excellence is built on a solid foundation of strategic execution, 
-            supported by three critical pillars to achieve peak performance.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">The Aegix Method</h2>
+          <div className="text-muted-foreground text-lg space-y-6">
+            <p>
+              Organizations lose an average of 25% in overall performance due to operational downtime, talent mismanagement and failure to execute on strategy.
+            </p>
+            <p>
+              The common denominator, is the human factor. Through our unique approach and experience, we help you set the context & conditions for behaviour to flourish. In doing so, we enable excellence in the execution of your strategy.
+            </p>
+          </div>
         </div>
 
         <div className="relative max-w-4xl mx-auto flex items-center justify-center">
