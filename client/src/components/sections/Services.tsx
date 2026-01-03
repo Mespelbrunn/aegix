@@ -16,7 +16,7 @@ export function Services() {
     {
       icon: Shield,
       title: "Culture & Leadership",
-      subtitle: "Building daily habits for resilience",
+      subtitle: "Guiding with clarity and objectives",
       points: [
         "Leadership principles & coaching",
         "Mission Command & Commander's Intent",
@@ -27,7 +27,7 @@ export function Services() {
     {
       icon: Crosshair,
       title: "Sustained Operations",
-      subtitle: "Guiding with clarity and objectives",
+      subtitle: "Building daily habits for resilience",
       points: [
         "From Information to Actionable Intelligence",
         "Structured Decision Making (DMP)",
