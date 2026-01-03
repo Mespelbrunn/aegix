@@ -17,7 +17,6 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
               <li><a href="/#the-aegix-method" className="hover:text-white transition-colors">The Aegix Method</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
@@ -25,17 +24,14 @@ export function Footer() {
           <div>
             <h4 className="font-mono font-bold uppercase mb-4 text-accent">Contact</h4>
             <p className="text-sm text-primary-foreground/70 mb-2">
-              info@aegix.com
-            </p>
-            <p className="text-sm text-primary-foreground/70">
-              Brussels, Belgium
+              info@aegix.be
             </p>
           </div>
         </div>
 
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center text-xs text-primary-foreground/40 font-mono">
-          <p>© 2024 Aegix. All rights reserved.</p>
-          <p>Designed with Tactical Precision.</p>
+          <p>© 2026 Aegix. All rights reserved.</p>
+          <p>Designed by Aegix.</p>
         </div>
       </div>
     </footer>
