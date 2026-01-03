@@ -109,6 +109,7 @@ export function TriangleFeature() {
                     x={pillar.x + 60} 
                     y="370" 
                     textAnchor="middle" 
+                    dominantBaseline="middle"
                     transform={`rotate(-90, ${pillar.x + 60}, 370)`}
                     className="text-lg font-bold font-heading fill-white uppercase tracking-widest pointer-events-none"
                   >
