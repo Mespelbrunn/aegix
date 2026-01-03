@@ -14,7 +14,7 @@ export function ProblemSection() {
     {
       title: "War for Talent",
       icon: Users,
-      description: "Leaky Pipeline: Performance loss hiding in plain sight across the employee lifecycle.",
+      description: "Leaky Pipeline: performance loss hiding in plain sight across the employee lifecycle.",
       lifecycle: ["Attract", "Select", "Onboard", "Develop", "Retain", "Offboard"],
       details: "Companies struggle to attract, select and retain the right people. By leaking potential throughout the entire lifecycle and neglecting the hidden costs of turnover and bad hires, a negative compounding effect creeps in.",
       stats: "NEGATIVE COMPOUNDING EFFECTS LEAVES COMPANIES IN SURVIVAL MODE"
@@ -141,7 +141,7 @@ export function ProblemSection() {
                       </div>
                       <div className="w-1/2 space-y-3">
                         {[
-                          { val: "40%", label: "vacancies remain unfilled" },
+                          { val: "40%", label: "of vacancies remain unfilled" },
                           { val: "23%", label: "of new hires leave (bad onboarding)" },
                           { val: "36%", label: "companies lack onboarding process" },
                           { val: "66%", label: "look for new job if unsupported" }
