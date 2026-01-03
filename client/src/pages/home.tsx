@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TriangleFeature } from "@/components/sections/TriangleFeature";
 import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { Services } from "@/components/sections/Services";
+import { ProblemSection } from "@/components/sections/ProblemSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <ComparisonSection />
+        <ProblemSection />
         <TriangleFeature />
         <Services />
         
