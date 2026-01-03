@@ -33,30 +33,19 @@ export function TriangleFeature() {
         <div className="relative max-w-4xl mx-auto flex items-center justify-center">
           <div className="relative w-full max-w-[800px] aspect-[16/14]">
             <svg viewBox="0 0 800 700" className="w-full h-full drop-shadow-2xl">
-              {/* Shadow/Depth Base */}
-              <motion.rect
-                x="40"
-                y="570"
-                width="740"
-                height="20"
-                fill="#051515"
-                initial={{ opacity: 0.3 }}
-              />
-
               {/* Roof / Pediment */}
-              <motion.g whileHover={{ y: -5, scale: 1.01 }} className="cursor-pointer group">
-                {/* 3D Side Depth for Roof */}
-                <path d="M 400,10 L 790,145 L 780,140 L 400,20 Z" fill="#081A1A" />
+              <motion.g whileHover={{ y: -5 }} className="cursor-pointer group">
                 <path 
                   d="M 400,20 L 780,140 L 20,140 Z" 
-                  fill="#0F2F2E"
+                  fill="var(--primary)" 
+                  style={{ fill: "#0F2F2E" }}
                   className="transition-colors hover:brightness-110"
                 />
                 <text 
                   x="400" 
                   y="105" 
                   textAnchor="middle" 
-                  className="text-3xl font-bold font-heading fill-white uppercase tracking-[0.2em] drop-shadow-md"
+                  className="text-3xl font-bold font-heading fill-white uppercase tracking-[0.2em]"
                 >
                   Performance
                 </text>
@@ -72,8 +61,6 @@ export function TriangleFeature() {
 
               {/* Architrave / Top Base */}
               <motion.g whileHover={{ scale: 1.01 }} className="cursor-pointer group">
-                {/* 3D Sides for Architrave */}
-                <rect x="25" y="160" width="780" height="40" fill="#081A1A" />
                 <rect 
                   x="20" 
                   y="155" 
@@ -100,12 +87,10 @@ export function TriangleFeature() {
               ].map((pillar, i) => (
                 <motion.g 
                   key={i}
-                  whileHover={{ scale: 1.03, y: -2, rotateY: 10 }}
-                  style={{ transformStyle: "preserve-3d" }}
+                  whileHover={{ scale: 1.02, y: -2 }}
                   className="cursor-pointer group"
                 >
-                  {/* Pillar Shaft Depth */}
-                  <rect x={pillar.x + 15} y="215" width="100" height="320" fill="#081A1A" />
+                  {/* Pillar Shaft - adjusted x to center relative to capital/base (pillar.x + 10) */}
                   <rect 
                     x={pillar.x + 10} 
                     y="210" 
@@ -115,20 +100,17 @@ export function TriangleFeature() {
                     className="transition-all hover:brightness-110"
                   />
                   
-                  {/* Pillar Capital & Base Depth */}
-                  <rect x={pillar.x + 5} y="215" width="120" height="10" fill="#081A1A" />
+                  {/* Pillar Capital & Base - adjusted to align exactly with architrave and base edges */}
                   <rect x={pillar.x} y="210" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
-                  
-                  <rect x={pillar.x + 5} y="525" width="120" height="10" fill="#081A1A" />
                   <rect x={pillar.x} y="520" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
                   
-                  {/* Vertical Text */}
+                  {/* Vertical Text - Centered vertically (210 + 320/2 = 370) and horizontally (pillar.x + 60) */}
                   <text 
                     x={pillar.x + 60} 
                     y="370" 
                     textAnchor="middle" 
                     transform={`rotate(-90, ${pillar.x + 60}, 370)`}
-                    className="text-lg font-bold font-heading fill-white uppercase tracking-widest pointer-events-none drop-shadow-sm"
+                    className="text-lg font-bold font-heading fill-white uppercase tracking-widest pointer-events-none"
                   >
                     {pillar.label}
                   </text>
@@ -145,8 +127,6 @@ export function TriangleFeature() {
 
               {/* Base / Foundation */}
               <motion.g whileHover={{ y: 2 }} className="cursor-pointer group">
-                {/* 3D Base Depth */}
-                <rect x="25" y="555" width="780" height="65" fill="#051515" />
                 <rect 
                   x="20" 
                   y="550" 
@@ -159,7 +139,7 @@ export function TriangleFeature() {
                   x="410" 
                   y="588" 
                   textAnchor="middle" 
-                  className="text-xl font-bold font-heading fill-white uppercase tracking-[0.4em] drop-shadow-md"
+                  className="text-xl font-bold font-heading fill-white uppercase tracking-[0.4em]"
                 >
                   Strategic Execution
                 </text>
