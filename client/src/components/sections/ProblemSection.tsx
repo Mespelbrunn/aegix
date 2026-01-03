@@ -14,9 +14,9 @@ export function ProblemSection() {
     {
       title: "War for Talent",
       icon: Users,
-      description: "The 'Leaky Pipeline': Performance loss hiding in plain sight across the employee lifecycle.",
+      description: "Leaky Pipeline: Performance loss hiding in plain sight across the employee lifecycle.",
       lifecycle: ["Attract", "Select", "Onboard", "Develop", "Retain", "Offboard"],
-      details: "40-80% of companies struggle to attract and retain. Growth pains = people problems.",
+      details: "Companies struggle to attract, select and retain the right people. By leaking potential throughout the entire lifecycle and neglecting the hidden costs of turnover and bad hires, a negative compounding effect creeps in.",
       stats: "66% leave if culturally unsupported | Negative compounding effect"
     },
     {
@@ -94,15 +94,53 @@ export function ProblemSection() {
                 )}
 
                 {problem.lifecycle && (
-                  <div className="space-y-4">
-                    <div className="flex flex-wrap gap-1">
-                      {problem.lifecycle.map((step, i) => (
-                        <span key={i} className="px-2 py-1 bg-primary/10 text-[10px] font-bold text-primary border border-primary/20">
-                          {step}
-                        </span>
-                      ))}
+                  <div className="space-y-6">
+                    <div className="relative w-full aspect-square max-w-[200px] mx-auto">
+                      <svg viewBox="0 0 100 100" className="w-full h-full">
+                        {/* Circular Path for Lifecycle */}
+                        <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-border" strokeDasharray="2 2" />
+                        {problem.lifecycle.map((step, i) => {
+                          const angle = (i * 360) / problem.lifecycle.length - 90;
+                          const x = 50 + 35 * Math.cos((angle * Math.PI) / 180);
+                          const y = 50 + 35 * Math.sin((angle * Math.PI) / 180);
+                          return (
+                            <g key={i}>
+                              <circle cx={x} cy={y} r="4" fill="hsl(var(--primary))" />
+                              <text
+                                x={x}
+                                y={y + (angle > 90 || angle < -270 ? -6 : 8)}
+                                textAnchor="middle"
+                                className="text-[4px] font-bold fill-primary uppercase"
+                              >
+                                {step}
+                              </text>
+                              {/* Arrow to next step */}
+                              {i < problem.lifecycle.length && (
+                                <path
+                                  d={`M ${50 + 35 * Math.cos(((angle + 10) * Math.PI) / 180)} ${50 + 35 * Math.sin(((angle + 10) * Math.PI) / 180)} 
+                                     A 35 35 0 0 1 ${50 + 35 * Math.cos(((angle + 50) * Math.PI) / 180)} ${50 + 35 * Math.sin(((angle + 50) * Math.PI) / 180)}`}
+                                  fill="none"
+                                  stroke="hsl(var(--accent))"
+                                  strokeWidth="0.5"
+                                  markerEnd="url(#arrowhead)"
+                                />
+                              )}
+                            </g>
+                          );
+                        })}
+                        <defs>
+                          <marker id="arrowhead" markerWidth="3" markerHeight="3" refX="2" refY="1.5" orient="auto">
+                            <polygon points="0 0, 3 1.5, 0 3" fill="hsl(var(--accent))" />
+                          </marker>
+                        </defs>
+                        <text x="50" y="52" textAnchor="middle" className="text-[5px] font-bold fill-accent uppercase tracking-widest">
+                          Lifecycle
+                        </text>
+                      </svg>
                     </div>
-                    <p className="text-xs text-muted-foreground">{problem.details}</p>
+                    <p className="text-[11px] leading-relaxed text-muted-foreground text-center">
+                      {problem.details}
+                    </p>
                   </div>
                 )}
 
