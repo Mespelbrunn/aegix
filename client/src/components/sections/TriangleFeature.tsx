@@ -31,20 +31,21 @@ export function TriangleFeature() {
         </div>
 
         <div className="relative max-w-4xl mx-auto flex items-center justify-center">
-          <div className="relative w-full max-w-[800px] aspect-[16/10]">
-            <svg viewBox="0 0 800 500" className="w-full h-full drop-shadow-2xl">
+          <div className="relative w-full max-w-[800px] aspect-[16/12]">
+            <svg viewBox="0 0 800 600" className="w-full h-full drop-shadow-2xl">
               {/* Roof / Pediment */}
               <motion.g whileHover={{ y: -5 }} className="cursor-pointer group">
                 <path 
                   d="M 400,20 L 780,140 L 20,140 Z" 
-                  fill="hsl(var(--primary))" 
-                  className="transition-colors hover:fill-primary/90"
+                  fill="var(--primary)" 
+                  style={{ fill: "#0F2F2E" }}
+                  className="transition-colors hover:brightness-110"
                 />
                 <text 
                   x="400" 
                   y="105" 
                   textAnchor="middle" 
-                  className="text-3xl font-bold font-heading fill-primary-foreground uppercase tracking-[0.2em]"
+                  className="text-3xl font-bold font-heading fill-white uppercase tracking-[0.2em]"
                 >
                   Performance
                 </text>
@@ -62,17 +63,17 @@ export function TriangleFeature() {
               <motion.g whileHover={{ scale: 1.01 }} className="cursor-pointer group">
                 <rect 
                   x="50" 
-                  y="140" 
+                  y="155" 
                   width="700" 
                   height="40" 
-                  fill="hsl(var(--primary))" 
-                  className="brightness-90 transition-all group-hover:brightness-100"
+                  fill="#0F2F2E"
+                  className="transition-all hover:brightness-110"
                 />
                 <text 
                   x="400" 
-                  y="165" 
+                  y="180" 
                   textAnchor="middle" 
-                  className="text-sm font-bold font-mono fill-primary-foreground uppercase tracking-[0.3em]"
+                  className="text-sm font-bold font-mono fill-white uppercase tracking-[0.3em]"
                 >
                   Building Daily Habits
                 </text>
@@ -85,33 +86,33 @@ export function TriangleFeature() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   className="cursor-pointer group"
                 >
-                  {/* Pillar Shaft */}
+                  {/* Pillar Shaft - lengthened to 280 */}
                   <rect 
                     x={120 + i * 230} 
-                    y="180" 
+                    y="210" 
                     width="100" 
-                    height="240" 
-                    fill="hsl(var(--primary))" 
-                    className="brightness-75 transition-all group-hover:brightness-90"
+                    height="280" 
+                    fill="#0F2F2E"
+                    className="transition-all hover:brightness-110"
                   />
                   
                   {/* Pillar Capital & Base */}
-                  <rect x={110 + i * 230} y="180" width="120" height="10" fill="hsl(var(--primary))" className="brightness-95" />
-                  <rect x={110 + i * 230} y="410" width="120" height="10" fill="hsl(var(--primary))" className="brightness-95" />
+                  <rect x={110 + i * 230} y="210" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
+                  <rect x={110 + i * 230} y="480" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
                   
-                  {/* Vertical Text */}
+                  {/* Vertical Text - Centered vertically (210 + 280/2 = 350) */}
                   <text 
                     x={170 + i * 230} 
-                    y="300" 
+                    y="350" 
                     textAnchor="middle" 
-                    transform={`rotate(-90, ${170 + i * 230}, 300)`}
-                    className="text-lg font-bold font-heading fill-primary-foreground uppercase tracking-widest pointer-events-none"
+                    transform={`rotate(-90, ${170 + i * 230}, 350)`}
+                    className="text-lg font-bold font-heading fill-white uppercase tracking-widest pointer-events-none"
                   >
                     {pillar.label}
                   </text>
 
                   {/* Tooltip for Pillar */}
-                  <foreignObject x={100 + i * 230} y="220" width="140" height="100" className="opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <foreignObject x={100 + i * 230} y="250" width="140" height="100" className="opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                     <div className="p-3 bg-popover border border-border text-xs text-center shadow-xl">
                       <p className="font-bold text-primary mb-1">{pillar.label}</p>
                       <p className="text-muted-foreground">{pillar.description}</p>
@@ -124,17 +125,17 @@ export function TriangleFeature() {
               <motion.g whileHover={{ y: 2 }} className="cursor-pointer group">
                 <rect 
                   x="30" 
-                  y="420" 
+                  y="510" 
                   width="740" 
                   height="60" 
-                  fill="hsl(var(--primary))" 
-                  className="brightness-50 transition-all group-hover:brightness-75"
+                  fill="#0F2F2E"
+                  className="transition-all hover:brightness-110"
                 />
                 <text 
                   x="400" 
-                  y="458" 
+                  y="548" 
                   textAnchor="middle" 
-                  className="text-xl font-bold font-heading fill-primary-foreground uppercase tracking-[0.4em]"
+                  className="text-xl font-bold font-heading fill-white uppercase tracking-[0.4em]"
                 >
                   Strategic Execution
                 </text>
