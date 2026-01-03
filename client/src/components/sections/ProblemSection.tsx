@@ -73,8 +73,7 @@ export function ProblemSection() {
                           </ul>
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-4 h-8 text-accent/50 mb-2" />
-                          <p className="text-[10px] font-bold text-primary text-center">60-75% Human Component</p>
+                          <ArrowDown className="w-4 h-16 text-accent/50 mb-2" />
                         </div>
                       </div>
                       <div className="flex flex-col h-full">
@@ -85,8 +84,7 @@ export function ProblemSection() {
                           </ul>
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-4 h-8 text-accent/50 mb-2" />
-                          <p className="text-[10px] font-bold text-primary text-center">10-20% Impact on Revenue</p>
+                          <ArrowDown className="w-4 h-16 text-accent/50 mb-2" />
                         </div>
                       </div>
                     </div>
@@ -173,8 +171,8 @@ export function ProblemSection() {
 
               <div className="mt-8 pt-6 border-t border-border min-h-[4rem] flex items-center justify-center">
                 {problem.title === "Disruption of Operations" ? (
-                  <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase text-center">
-                    affects a
+                  <p className="text-[10px] font-bold text-primary font-mono tracking-widest uppercase text-center leading-relaxed">
+                    60-75% Human Component affects a 10-20% Impact on Revenue
                   </p>
                 ) : (
                   <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase text-center">
