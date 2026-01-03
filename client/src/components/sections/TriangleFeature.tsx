@@ -64,13 +64,13 @@ export function TriangleFeature() {
                 <rect 
                   x="20" 
                   y="155" 
-                  width="760" 
+                  width="780" 
                   height="40" 
                   fill="#0F2F2E"
                   className="transition-all hover:brightness-110"
                 />
                 <text 
-                  x="400" 
+                  x="410" 
                   y="180" 
                   textAnchor="middle" 
                   className="text-sm font-bold font-mono fill-white uppercase tracking-[0.3em]"
@@ -90,9 +90,9 @@ export function TriangleFeature() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   className="cursor-pointer group"
                 >
-                  {/* Pillar Shaft - lengthened further */}
+                  {/* Pillar Shaft - adjusted x to center relative to capital/base (pillar.x + 10) */}
                   <rect 
-                    x={pillar.x} 
+                    x={pillar.x + 10} 
                     y="210" 
                     width="100" 
                     height="320" 
@@ -100,23 +100,23 @@ export function TriangleFeature() {
                     className="transition-all hover:brightness-110"
                   />
                   
-                  {/* Pillar Capital & Base */}
-                  <rect x={pillar.x - 10} y="210" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
-                  <rect x={pillar.x - 10} y="520" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
+                  {/* Pillar Capital & Base - adjusted to align exactly with architrave and base edges */}
+                  <rect x={pillar.x} y="210" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
+                  <rect x={pillar.x} y="520" width="120" height="10" fill="#0F2F2E" className="brightness-125" />
                   
-                  {/* Vertical Text - Centered vertically (210 + 320/2 = 370) */}
+                  {/* Vertical Text - Centered vertically (210 + 320/2 = 370) and horizontally (pillar.x + 60) */}
                   <text 
-                    x={pillar.x + 50} 
+                    x={pillar.x + 60} 
                     y="370" 
                     textAnchor="middle" 
-                    transform={`rotate(-90, ${pillar.x + 50}, 370)`}
+                    transform={`rotate(-90, ${pillar.x + 60}, 370)`}
                     className="text-lg font-bold font-heading fill-white uppercase tracking-widest pointer-events-none"
                   >
                     {pillar.label}
                   </text>
 
                   {/* Tooltip for Pillar */}
-                  <foreignObject x={pillar.x - 20} y="250" width="140" height="100" className="opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <foreignObject x={pillar.x - 10} y="250" width="140" height="100" className="opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                     <div className="p-3 bg-popover border border-border text-xs text-center shadow-xl">
                       <p className="font-bold text-primary mb-1">{pillar.label}</p>
                       <p className="text-muted-foreground">{pillar.description}</p>
@@ -130,13 +130,13 @@ export function TriangleFeature() {
                 <rect 
                   x="20" 
                   y="550" 
-                  width="760" 
+                  width="780" 
                   height="60" 
                   fill="#0F2F2E"
                   className="transition-all hover:brightness-110"
                 />
                 <text 
-                  x="400" 
+                  x="410" 
                   y="588" 
                   textAnchor="middle" 
                   className="text-xl font-bold font-heading fill-white uppercase tracking-[0.4em]"
