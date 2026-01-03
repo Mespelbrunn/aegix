@@ -95,50 +95,65 @@ export function ProblemSection() {
 
                 {problem.lifecycle && (
                   <div className="space-y-6">
-                    <div className="relative w-full aspect-square max-w-[200px] mx-auto">
-                      <svg viewBox="0 0 100 100" className="w-full h-full">
-                        {/* Circular Path for Lifecycle */}
-                        <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-border" strokeDasharray="2 2" />
-                        {problem.lifecycle.map((step, i) => {
-                          const angle = (i * 360) / problem.lifecycle.length - 90;
-                          const x = 50 + 35 * Math.cos((angle * Math.PI) / 180);
-                          const y = 50 + 35 * Math.sin((angle * Math.PI) / 180);
-                          return (
-                            <g key={i}>
-                              <circle cx={x} cy={y} r="4" fill="hsl(var(--primary))" />
-                              <text
-                                x={x}
-                                y={y + (angle > 90 || angle < -270 ? -6 : 8)}
-                                textAnchor="middle"
-                                className="text-[4px] font-bold fill-primary uppercase"
-                              >
-                                {step}
-                              </text>
-                              {/* Arrow to next step */}
-                              {i < problem.lifecycle.length && (
-                                <path
-                                  d={`M ${50 + 35 * Math.cos(((angle + 10) * Math.PI) / 180)} ${50 + 35 * Math.sin(((angle + 10) * Math.PI) / 180)} 
-                                     A 35 35 0 0 1 ${50 + 35 * Math.cos(((angle + 50) * Math.PI) / 180)} ${50 + 35 * Math.sin(((angle + 50) * Math.PI) / 180)}`}
-                                  fill="none"
-                                  stroke="hsl(var(--accent))"
-                                  strokeWidth="0.5"
-                                  markerEnd="url(#arrowhead)"
-                                />
-                              )}
-                            </g>
-                          );
-                        })}
-                        <defs>
-                          <marker id="arrowhead" markerWidth="3" markerHeight="3" refX="2" refY="1.5" orient="auto">
-                            <polygon points="0 0, 3 1.5, 0 3" fill="hsl(var(--accent))" />
-                          </marker>
-                        </defs>
-                        <text x="50" y="52" textAnchor="middle" className="text-[5px] font-bold fill-accent uppercase tracking-widest">
-                          Lifecycle
-                        </text>
-                      </svg>
+                    <div className="flex items-center gap-4">
+                      <div className="relative w-1/2 aspect-square">
+                        <svg viewBox="0 0 100 100" className="w-full h-full">
+                          {/* Circular Path for Lifecycle */}
+                          <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-border" strokeDasharray="2 2" />
+                          {problem.lifecycle.map((step, i) => {
+                            const angle = (i * 360) / problem.lifecycle.length - 90;
+                            const x = 50 + 35 * Math.cos((angle * Math.PI) / 180);
+                            const y = 50 + 35 * Math.sin((angle * Math.PI) / 180);
+                            return (
+                              <g key={i}>
+                                <circle cx={x} cy={y} r="4" fill="hsl(var(--primary))" />
+                                <text
+                                  x={x}
+                                  y={y + (angle > 90 || angle < -270 ? -6 : 8)}
+                                  textAnchor="middle"
+                                  className="text-[4px] font-bold fill-primary uppercase"
+                                >
+                                  {step}
+                                </text>
+                                {/* Arrow to next step */}
+                                {i < problem.lifecycle.length && (
+                                  <path
+                                    d={`M ${50 + 35 * Math.cos(((angle + 10) * Math.PI) / 180)} ${50 + 35 * Math.sin(((angle + 10) * Math.PI) / 180)} 
+                                       A 35 35 0 0 1 ${50 + 35 * Math.cos(((angle + 50) * Math.PI) / 180)} ${50 + 35 * Math.sin(((angle + 50) * Math.PI) / 180)}`}
+                                    fill="none"
+                                    stroke="hsl(var(--accent))"
+                                    strokeWidth="0.5"
+                                    markerEnd="url(#arrowhead_lifecycle)"
+                                  />
+                                )}
+                              </g>
+                            );
+                          })}
+                          <defs>
+                            <marker id="arrowhead_lifecycle" markerWidth="3" markerHeight="3" refX="2" refY="1.5" orient="auto">
+                              <polygon points="0 0, 3 1.5, 0 3" fill="hsl(var(--accent))" />
+                            </marker>
+                          </defs>
+                          <text x="50" y="52" textAnchor="middle" className="text-[5px] font-bold fill-accent uppercase tracking-widest">
+                            Lifecycle
+                          </text>
+                        </svg>
+                      </div>
+                      <div className="w-1/2 space-y-3">
+                        {[
+                          { val: "40%", label: "vacancies remain unfilled" },
+                          { val: "23%", label: "of new hires leave (bad onboarding)" },
+                          { val: "36%", label: "companies lack onboarding process" },
+                          { val: "66%", label: "look for new job if unsupported" }
+                        ].map((stat, i) => (
+                          <div key={i} className="border-l-2 border-accent pl-2">
+                            <p className="text-xs font-bold text-primary">{stat.val}</p>
+                            <p className="text-[9px] leading-tight text-muted-foreground uppercase font-mono">{stat.label}</p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                    <p className="text-[11px] leading-relaxed text-muted-foreground text-center">
+                    <p className="text-[11px] leading-relaxed text-muted-foreground">
                       {problem.details}
                     </p>
                   </div>
