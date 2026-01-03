@@ -41,12 +41,14 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="rounded-none text-base px-8 h-14 bg-primary hover:bg-primary/90 text-primary-foreground font-mono uppercase tracking-wider group">
-                Start Your Mission
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Button size="lg" className="rounded-none text-base px-8 h-14 bg-primary hover:bg-primary/90 text-primary-foreground font-mono uppercase tracking-wider group" asChild>
+                <a href="#contact">
+                  Start Your Mission
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="rounded-none text-base px-8 h-14 border-primary text-primary hover:bg-primary/5 font-mono uppercase tracking-wider">
-                Get To Know Maarten And Patrick
+              <Button size="lg" variant="outline" className="rounded-none text-base px-8 h-14 border-primary text-primary hover:bg-primary/5 font-mono uppercase tracking-wider" asChild>
+                <a href="/about">Get To Know Maarten And Patrick</a>
               </Button>
             </div>
           </motion.div>
