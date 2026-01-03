@@ -20,7 +20,7 @@ export default function Home() {
           <div className="container mx-auto px-6">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">READY TO TRANSFORM YOUR OPERATIONS?</h2>
             <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mb-10">
-              Stop relying on theory. Start implementing proven strategies for sustained performance.
+              Stop relying on theory to change your strategy. Start implementing proven techniques to execute on your strategy and perform sustainably.
             </p>
             <button className="bg-accent text-accent-foreground px-8 py-4 font-bold font-mono uppercase tracking-wider hover:bg-white hover:text-primary transition-colors">
               Schedule Briefing
