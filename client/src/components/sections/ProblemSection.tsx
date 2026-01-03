@@ -17,7 +17,7 @@ export function ProblemSection() {
       description: "Leaky Pipeline: Performance loss hiding in plain sight across the employee lifecycle.",
       lifecycle: ["Attract", "Select", "Onboard", "Develop", "Retain", "Offboard"],
       details: "Companies struggle to attract, select and retain the right people. By leaking potential throughout the entire lifecycle and neglecting the hidden costs of turnover and bad hires, a negative compounding effect creeps in.",
-      stats: "66% leave if culturally unsupported | Negative compounding effect"
+      stats: "NEGATIVE COMPOUNDING EFFECTS LEAVES COMPANIES IN SURVIVAL MODE"
     },
     {
       title: "Strategy-to-Performance Gap",
