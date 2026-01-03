@@ -31,6 +31,9 @@ export function TriangleFeature() {
             <p>
               The common denominator, is the human factor. Through our unique approach and experience, we help you set the context & conditions for behaviour to flourish. In doing so, we enable excellence in the execution of your strategy.
             </p>
+            <p className="font-bold text-foreground pt-4">
+              Welcome to The Performance Paradigm
+            </p>
           </div>
         </div>
 
