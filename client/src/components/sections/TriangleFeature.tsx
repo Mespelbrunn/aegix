@@ -20,10 +20,10 @@ export function TriangleFeature() {
   ];
 
   return (
-    <section id="methodology" className="py-24 bg-secondary/30 relative overflow-hidden">
+    <section id="the-aegix-method" className="py-24 bg-secondary/30 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">Strategic Architecture</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">The Aegix Method</h2>
           <p className="text-muted-foreground text-lg">
             Our framework for excellence is built on a solid foundation of strategic execution, 
             supported by three critical pillars to achieve peak performance.
