@@ -8,7 +8,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "#the-aegix-method", label: "The Aegix Method" },
+    { href: "/#the-aegix-method", label: "The Aegix Method" },
     { href: "/about", label: "About Us" },
   ];
 

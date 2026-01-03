@@ -16,7 +16,7 @@ export function Footer() {
             <h4 className="font-mono font-bold uppercase mb-4 text-accent">Navigation</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="#the-aegix-method" className="hover:text-white transition-colors">The Aegix Method</a></li>
+              <li><a href="/#the-aegix-method" className="hover:text-white transition-colors">The Aegix Method</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
