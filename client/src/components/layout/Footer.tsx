@@ -8,8 +8,7 @@ export function Footer() {
               AEGIX
             </h3>
             <p className="text-primary-foreground/70 max-w-sm mb-6">
-              Enabling human potential in organizations through battle-proven military principles.
-              Focus on growth, profit, and contribution to society.
+              Our mission is to enable human potential in organizations through battle-proven military principles so that you can focus on growth, profit and contribution to society.
             </p>
           </div>
           
@@ -17,7 +16,7 @@ export function Footer() {
             <h4 className="font-mono font-bold uppercase mb-4 text-accent">Navigation</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-              <li><a href="#methodology" className="hover:text-white transition-colors">Methodology</a></li>
+              <li><a href="#the-aegix-method" className="hover:text-white transition-colors">The Aegix Method</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Services</a></li>
               <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
             </ul>
