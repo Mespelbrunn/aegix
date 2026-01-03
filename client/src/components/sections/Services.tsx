@@ -10,7 +10,8 @@ export function Services() {
         "From Surviving to Thriving culture",
         "Values-based recruitment & onboarding",
         "Talent development & behavior analysis",
-        "Offboarding as a strategic advantage"
+        "Offboarding as a strategic advantage",
+        "Employee Lifecycle as positive compounding effect"
       ]
     },
     {
@@ -21,7 +22,8 @@ export function Services() {
         "Leadership principles & coaching",
         "Mission Command & Commander's Intent",
         "Operational Resilience Mindset",
-        "Feedback & Reporting Culture"
+        "Feedback & Reporting Culture",
+        "Execution alignment with strategy"
       ]
     },
     {
@@ -32,7 +34,8 @@ export function Services() {
         "From Information to Actionable Intelligence",
         "Structured Decision Making (DMP)",
         "Contingency Planning & Red Teaming",
-        "High Reliability Organization (HRO) setup"
+        "High Reliability Organization (HRO) setup",
+        "Integrated safety culture"
       ]
     }
   ];
