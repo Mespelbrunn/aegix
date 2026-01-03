@@ -73,7 +73,7 @@ export function ProblemSection() {
                           </ul>
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-4 h-16 text-accent/50 mb-2" />
+                          <ArrowDown className="w-4 h-24 text-accent/50 mb-0 translate-y-8" />
                         </div>
                       </div>
                       <div className="flex flex-col h-full">
@@ -84,7 +84,7 @@ export function ProblemSection() {
                           </ul>
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-4 h-16 text-accent/50 mb-2" />
+                          <ArrowDown className="w-4 h-24 text-accent/50 mb-0 translate-y-8" />
                         </div>
                       </div>
                     </div>
