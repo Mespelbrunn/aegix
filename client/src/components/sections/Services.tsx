@@ -19,7 +19,7 @@ export function Services() {
       subtitle: "Building daily habits for resilience",
       points: [
         "Leadership principles & coaching",
-        "High Reliability Organization (HRO) setup",
+        "Mission Command & Commander's Intent",
         "Operational Resilience Mindset",
         "Feedback & Reporting Culture"
       ]
@@ -32,7 +32,7 @@ export function Services() {
         "From Information to Actionable Intelligence",
         "Structured Decision Making (DMP)",
         "Contingency Planning & Red Teaming",
-        "Mission Command & Commander's Intent"
+        "High Reliability Organization (HRO) setup"
       ]
     }
   ];
