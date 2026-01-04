@@ -14,10 +14,10 @@ export function ProblemSection() {
     {
       title: "War for Talent",
       icon: Users,
-      description: "Leaky Pipeline: performance loss hiding in plain sight across the employee lifecycle.",
+      description: "Leaky Pipeline: performance loss & costs hiding in plain sight across the employee lifecycle.",
       lifecycle: ["Attract", "Select", "Onboard", "Develop", "Retain", "Offboard"],
-      details: "Companies struggle to attract, select and retain the right people. By leaking potential throughout the entire lifecycle and neglecting the hidden costs of turnover and bad hires, a negative compounding effect creeps in.",
-      stats: "NEGATIVE COMPOUNDING EFFECTS LEAVES COMPANIES IN SURVIVAL MODE"
+      details: "",
+      stats: "NEGATIVE COMPOUNDING EFFECT LEAVES COMPANIES IN SURVIVAL MODE"
     },
     {
       title: "Strategy-to-Performance Gap",
@@ -31,7 +31,8 @@ export function ProblemSection() {
         { label: "Unclear Accountability", value: "4.1%" },
         { label: "Organizational Silos", value: "3.7%" },
         { label: "Inadequate Consequences", value: "3.0%" },
-        { label: "Inadequate Monitoring", value: "3.0%" }
+        { label: "Inadequate Monitoring", value: "3.0%" },
+        { label: "Structural Shortcomings", value: "1.5%" }
       ],
       stats: "37% Average Performance Loss"
     }
@@ -78,6 +79,7 @@ export function ProblemSection() {
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
                           <ArrowDown className="w-4 h-24 text-accent/50 mb-0 translate-y-8" />
+                          <p className="text-[10px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">60-75% human component</p>
                         </div>
                       </div>
                       <div className="flex flex-col h-full">
@@ -89,6 +91,7 @@ export function ProblemSection() {
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
                           <ArrowDown className="w-4 h-24 text-accent/50 mb-0 translate-y-8" />
+                          <p className="text-[10px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">10-20% impact on revenue</p>
                         </div>
                       </div>
                     </div>
@@ -155,9 +158,11 @@ export function ProblemSection() {
                         ))}
                       </div>
                     </div>
-                    <p className="text-[11px] leading-relaxed text-muted-foreground">
-                      {problem.details}
-                    </p>
+                    {problem.details && (
+                      <p className="text-[11px] leading-relaxed text-muted-foreground">
+                        {problem.details}
+                      </p>
+                    )}
                   </div>
                 )}
 
@@ -176,7 +181,7 @@ export function ProblemSection() {
               <div className="mt-8 pt-6 border-t border-border min-h-[4rem] flex items-center justify-center">
                 {problem.title === "Disruption of Operations" ? (
                   <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase text-center leading-relaxed">
-                    60-75% Human Component affects a 10-20% Impact on Revenue
+                    POOR HUMAN INTEGRATION DIRECTLY AFFECTS REVENUE
                   </p>
                 ) : (
                   <p className="text-xs font-bold text-primary font-mono tracking-widest uppercase text-center">
