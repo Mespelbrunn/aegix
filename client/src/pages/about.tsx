@@ -20,7 +20,7 @@ export default function About() {
             <div className="space-y-12 text-lg md:text-xl leading-relaxed text-muted-foreground">
               <section className="border-l-4 border-accent pl-8 py-2">
                 <p>
-                  Maarten Van de Wiele is a Major in the Belgian Army with vast experience as a leader in the infantry with multiple deployments to hostile environments. As Safety Officer for Land Forces, he has built the expertise to combine human behaviour with safe and sustained operations.
+                  Maarten Van de Wiele is a Major in the Belgian Army with vast experience as a leader in the infantry with multiple deployments to hostile environments. As Senior Officer within the Land Forces, he has built the expertise to combine human behaviour with safe and sustained operations.
                 </p>
               </section>
 
