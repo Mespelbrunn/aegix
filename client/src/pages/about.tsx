@@ -23,7 +23,7 @@ export default function About() {
                   <img 
                     src="/assets/maarten.jpg" 
                     alt="Maarten Van de Wiele" 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-[center_5%] hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="border-l-4 border-accent pl-12 py-4">
