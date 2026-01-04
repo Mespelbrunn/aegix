@@ -79,7 +79,7 @@ export function ProblemSection() {
                         </div>
                         <div className="flex flex-col items-center justify-end h-48 mt-auto">
                           <ArrowDown className="w-5 h-24 text-accent/50 shrink-0" />
-                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-4 text-center uppercase tracking-widest leading-tight h-10 flex items-center justify-center">60-75% human component</p>
+                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-4 text-center uppercase tracking-widest leading-tight h-10 flex items-start justify-center">60-75% human component</p>
                         </div>
                       </div>
                       <div className="flex flex-col h-full">
@@ -91,7 +91,7 @@ export function ProblemSection() {
                         </div>
                         <div className="flex flex-col items-center justify-end h-48 mt-auto">
                           <ArrowDown className="w-5 h-24 text-accent/50 shrink-0" />
-                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-4 text-center uppercase tracking-widest leading-tight h-10 flex items-center justify-center">10-20% impact on revenue</p>
+                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-4 text-center uppercase tracking-widest leading-tight h-10 flex items-start justify-center">10-20% impact on revenue</p>
                         </div>
                       </div>
                     </div>
