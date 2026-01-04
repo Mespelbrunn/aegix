@@ -77,9 +77,9 @@ export function ProblemSection() {
                             {problem.sources.map((s, i) => <li key={i}>• {s}</li>)}
                           </ul>
                         </div>
-                        <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-5 h-24 text-accent/50 mb-0 translate-y-8" />
-                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">60-75% human component</p>
+                        <div className="flex flex-col items-center justify-end h-40">
+                          <ArrowDown className="w-5 h-24 text-accent/50" />
+                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-4 text-center uppercase tracking-widest leading-tight">60-75% human component</p>
                         </div>
                       </div>
                       <div className="flex flex-col h-full">
@@ -89,9 +89,9 @@ export function ProblemSection() {
                             {problem.impacts.map((im, i) => <li key={i}>• {im}</li>)}
                           </ul>
                         </div>
-                        <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-5 h-24 text-accent/50 mb-0 translate-y-8" />
-                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">10-20% impact on revenue</p>
+                        <div className="flex flex-col items-center justify-end h-40">
+                          <ArrowDown className="w-5 h-24 text-accent/50" />
+                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-4 text-center uppercase tracking-widest leading-tight">10-20% impact on revenue</p>
                         </div>
                       </div>
                     </div>
