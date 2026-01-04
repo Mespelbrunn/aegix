@@ -34,7 +34,7 @@ export function ProblemSection() {
         { label: "Inadequate Monitoring", value: "3.0%" },
         { label: "Structural Shortcomings", value: "1.5%" }
       ],
-      stats: "37% Average Performance Loss"
+      stats: "37% Average Performance Loss in execution of strategy"
     }
   ];
 
