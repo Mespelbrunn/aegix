@@ -28,7 +28,7 @@ export default function About() {
                 </div>
                 <div className="border-l-4 border-accent pl-12 py-4">
                   <p className="tracking-wide">
-                    Maarten Van de Wiele is a Major in the Belgian Army with vast experience as a leader in the infantry with multiple deployments to hostile environments. As Senior Officer within the Land Forces, he has built the expertise to combine human behaviour with safe and sustained operations.
+                    <strong>Maarten Van de Wiele</strong> is a Major in the Belgian Army with vast experience as a leader in the infantry with multiple deployments to hostile environments. As Senior Officer within the Land Forces, he has built the expertise to combine human behaviour with safe and sustained operations.
                   </p>
                 </div>
               </section>
@@ -36,7 +36,7 @@ export default function About() {
               <section className="grid md:grid-cols-[2fr_1fr] gap-16 items-center">
                 <div className="order-2 md:order-1 border-r-4 border-primary pr-12 py-4 text-right">
                   <p className="tracking-wide">
-                    Patrick Sauboin retired as a Captain in the Belgian Army in 2025. With five years of operational experience as a leader in various roles and deployments, and five years as digital transformation officer, he has learned what enables organizations to perform when people, processes and technology come together in demanding situations.
+                    <strong>Patrick Sauboin</strong> left the Belgian Army in 2025 as an experienced Captain. After five years of operational leadership in various roles and deployments, and five years as digital transformation officer and hands-on IT manager, he has learned what enables organizations to perform when people, processes and technology come together in critical situations.
                   </p>
                 </div>
                 <div className="order-1 md:order-2 aspect-[3/4] overflow-hidden grayscale border border-border w-3/4 mx-auto md:mr-0">
