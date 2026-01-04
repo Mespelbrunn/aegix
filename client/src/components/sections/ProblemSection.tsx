@@ -73,25 +73,25 @@ export function ProblemSection() {
                       <div className="flex flex-col h-full">
                         <div className="w-full text-left">
                           <p className="text-accent font-bold mb-3 underline underline-offset-4 text-xs">Sources</p>
-                          <ul className="space-y-2 min-h-[100px]">
+                          <ul className="space-y-3 min-h-[120px] text-xs">
                             {problem.sources.map((s, i) => <li key={i}>• {s}</li>)}
                           </ul>
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-4 h-24 text-accent/50 mb-0 translate-y-8" />
-                          <p className="text-[10px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">60-75% human component</p>
+                          <ArrowDown className="w-5 h-24 text-accent/50 mb-0 translate-y-8" />
+                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">60-75% human component</p>
                         </div>
                       </div>
                       <div className="flex flex-col h-full">
                         <div className="w-full text-left">
                           <p className="text-accent font-bold mb-3 underline underline-offset-4 text-xs">Impact</p>
-                          <ul className="space-y-2 min-h-[100px]">
+                          <ul className="space-y-3 min-h-[120px] text-xs">
                             {problem.impacts.map((im, i) => <li key={i}>• {im}</li>)}
                           </ul>
                         </div>
                         <div className="flex-grow flex flex-col items-center justify-end mt-4">
-                          <ArrowDown className="w-4 h-24 text-accent/50 mb-0 translate-y-8" />
-                          <p className="text-[10px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">10-20% impact on revenue</p>
+                          <ArrowDown className="w-5 h-24 text-accent/50 mb-0 translate-y-8" />
+                          <p className="text-[12px] font-mono font-bold text-muted-foreground mt-10 text-center uppercase tracking-widest">10-20% impact on revenue</p>
                         </div>
                       </div>
                     </div>
@@ -100,8 +100,8 @@ export function ProblemSection() {
 
                 {problem.lifecycle && (
                   <div className="space-y-6">
-                    <div className="flex items-center gap-4">
-                      <div className="relative w-1/2 aspect-square">
+                    <div className="flex items-center gap-6">
+                      <div className="relative w-1/2 aspect-square scale-110 origin-left">
                         <svg viewBox="0 0 100 100" className="w-full h-full">
                           {/* Circular Path for Lifecycle */}
                           <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-border" strokeDasharray="2 2" />
@@ -116,7 +116,7 @@ export function ProblemSection() {
                                   x={x}
                                   y={y + (angle > 90 || angle < -270 ? -6 : 8)}
                                   textAnchor="middle"
-                                  className="text-[4px] font-bold fill-primary uppercase"
+                                  className="text-[5px] font-bold fill-primary uppercase"
                                 >
                                   {step}
                                 </text>
@@ -139,21 +139,21 @@ export function ProblemSection() {
                               <polygon points="0 0, 3 1.5, 0 3" fill="hsl(var(--accent))" />
                             </marker>
                           </defs>
-                          <text x="50" y="52" textAnchor="middle" className="text-[5px] font-bold fill-accent uppercase tracking-widest">
+                          <text x="50" y="52" textAnchor="middle" className="text-[6px] font-bold fill-accent uppercase tracking-widest">
                             Lifecycle
                           </text>
                         </svg>
                       </div>
-                      <div className="w-1/2 space-y-3">
+                      <div className="w-1/2 space-y-4">
                         {[
                           { val: "40%", label: "of vacancies remain unfilled" },
                           { val: "23%", label: "of new hires leave (bad onboarding)" },
                           { val: "36%", label: "companies lack onboarding process" },
                           { val: "66%", label: "look for new job if unsupported" }
                         ].map((stat, i) => (
-                          <div key={i} className="border-l-2 border-accent pl-2">
-                            <p className="text-xs font-bold text-primary">{stat.val}</p>
-                            <p className="text-[9px] leading-tight text-muted-foreground uppercase font-mono">{stat.label}</p>
+                          <div key={i} className="border-l-2 border-accent pl-3">
+                            <p className="text-sm font-bold text-primary">{stat.val}</p>
+                            <p className="text-[10px] leading-tight text-muted-foreground uppercase font-mono">{stat.label}</p>
                           </div>
                         ))}
                       </div>
@@ -167,9 +167,9 @@ export function ProblemSection() {
                 )}
 
                 {problem.gaps && (
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     {problem.gaps.map((gap, i) => (
-                      <div key={i} className="flex justify-between items-center text-[11px] font-mono border-b border-border pb-1">
+                      <div key={i} className="flex justify-between items-center text-[13px] font-mono border-b border-border pb-1">
                         <span className="text-muted-foreground">{gap.label}</span>
                         <span className="text-primary font-bold">-{gap.value}</span>
                       </div>
