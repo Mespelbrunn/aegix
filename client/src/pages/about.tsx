@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
+import { Linkedin } from "lucide-react";
 
 export default function About() {
   return (
@@ -26,10 +27,19 @@ export default function About() {
                     className="w-full h-full object-cover object-[center_5%] hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="border-l-4 border-accent pl-12 py-4">
+                <div className="border-l-4 border-accent pl-12 py-4 relative group/bio">
                   <p className="tracking-wide">
                     <strong>Maarten Van de Wiele</strong> is a Major in the Belgian Army with vast experience as a leader in the infantry with multiple deployments to hostile environments. As Senior Officer within the Land Forces, he has built the expertise to combine human behaviour with safe and sustained operations.
                   </p>
+                  <a 
+                    href="https://www.linkedin.com/in/maarten-van-de-wiele-5b25159b/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-primary hover:text-accent transition-colors"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                    <span className="text-xs font-mono uppercase tracking-widest font-bold">Connect</span>
+                  </a>
                 </div>
               </section>
 
@@ -38,6 +48,17 @@ export default function About() {
                   <p className="tracking-wide">
                     <strong>Patrick Sauboin</strong> left the Belgian Army in 2025 as an experienced Captain. After five years of operational leadership in various roles and deployments, and five years as digital transformation officer and hands-on IT manager, he has learned what enables organizations to perform when people, processes and technology come together in critical situations.
                   </p>
+                  <div className="flex justify-end">
+                    <a 
+                      href="https://www.linkedin.com/in/patricksauboin/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex items-center gap-2 text-primary hover:text-accent transition-colors"
+                    >
+                      <span className="text-xs font-mono uppercase tracking-widest font-bold">Connect</span>
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  </div>
                 </div>
                 <div className="order-1 md:order-2 aspect-[3/4] overflow-hidden grayscale border border-border w-3/4 mx-auto md:mr-0">
                   <img 
