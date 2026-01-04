@@ -7,11 +7,11 @@ export function Services() {
       title: "Talent Integration",
       subtitle: "Designing organizations around humans",
       points: [
-        "From Surviving to Thriving culture",
-        "Values-based recruitment & onboarding",
-        "Talent development & behavior analysis",
-        "Offboarding as a strategic advantage",
-        "Employee Lifecycle as positive compounding effect"
+        "From Surviving to Thriving Culture",
+        "Values-based Recruitment & Onboarding",
+        "Talent Development & Behavior Analysis",
+        "Offboarding as a Strategic Advantage",
+        "Employee Lifecycle as positive Compounding Effect"
       ]
     },
     {
@@ -19,11 +19,11 @@ export function Services() {
       title: "Culture & Leadership",
       subtitle: "Guiding with clarity and objectives",
       points: [
-        "Leadership principles & coaching",
+        "Leadership Principles & Coaching",
         "Mission Command & Commander's Intent",
         "Operational Resilience Mindset",
         "Feedback & Reporting Culture",
-        "Execution alignment with strategy"
+        "Execution Alignment with Strategy"
       ]
     },
     {
@@ -34,8 +34,8 @@ export function Services() {
         "From Information to Actionable Intelligence",
         "Structured Decision Making (DMP)",
         "Contingency Planning & Red Teaming",
-        "High Reliability Organization (HRO) setup",
-        "Integrated safety culture"
+        "High Reliability Organization (HRO) Setup",
+        "Integrated Safety Culture"
       ]
     }
   ];
