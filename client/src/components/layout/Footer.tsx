@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-12 items-start">
           <div className="col-span-2">
-            <h3 className="text-2xl font-bold font-heading mb-4 tracking-tighter leading-none">
+            <h3 className="text-2xl font-bold font-heading mb-4 tracking-tighter leading-none text-[#F5F4F2]">
               AEGIX
             </h3>
             <div className="pt-2">
